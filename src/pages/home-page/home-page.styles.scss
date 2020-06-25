@@ -1,0 +1,207 @@
+$primary-color: palevioletred;
+
+.homepage-container {
+    height: 100%;
+    overflow-x: hidden;
+
+    .banner-container {
+        height:50%;
+        width:100%;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../../assets/images/banner.jpg");
+        padding-top: 200px;
+
+        .banner-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+            margin-left: 30px;
+            justify-content: center;
+        }
+        
+        .banner-text {
+            color: white;
+            font-size: 4vw;
+            width: 20vw;
+        }
+    }
+
+   
+
+    .banner-text {
+        color: red;
+    }
+
+    
+
+    .initiatives-section {
+            background-color: $primary-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 40vh;
+            align-items: center;
+
+        .initiative-header-title {
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        
+        .initiatives {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+    
+            .initiative-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: 1.2s;
+    
+                &.initiative-group:hover {
+                    color: red;
+                    cursor: pointer;
+                }
+    
+                .initiative-text {
+                    color: white;
+                    margin-top: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+}
+    .gallery-container {
+
+        .gallery-title {
+            text-align: center;
+            color: $primary-color;
+            height: 8vh;
+        }
+
+        .grid-gallery-container {
+            display: grid;
+            grid-template-columns: 2.5fr 3fr 2.5fr;
+            grid-template-rows: 30.5em 38.5em 26.5em;
+            flex-wrap: wrap;
+            row-gap: .5em;
+            column-gap: .5em;
+            grid-template-areas: 
+                "grid-image1 grid-image1 grid-image1"
+                "grid-image2 grid-image3 grid-image4"
+                "grid-image5 grid-image5 grid-image4";
+                background-color: $primary-color;
+        
+            .grid-image1 {
+                background-color: red;
+                grid-area: grid-image1;
+                background-image: url("https://bmorehumane.org/wp-content/uploads/2020/01/WEB-HEADER-Adopt-a-dog.png");
+                background-position: center;
+                background-size: cover;
+                color: $primary-color;
+
+                &.grid-image1:hover {
+                    opacity: 0.8;
+               }
+
+                .pet-details {
+                    padding: 20px;
+                }
+            }
+        
+            .grid-image2 {
+                background-color: blue;
+                grid-area: grid-image2;
+                background-image: url("https://static01.nyt.com/images/2020/04/22/science/22VIRUS-PETCATS1/22VIRUS-PETCATS1-mediumSquareAt3X.jpg");
+                background-position: center;
+                background-size: cover;
+                color: $primary-color;
+
+                &.grid-image2:hover {
+                    opacity: 0.8;
+               }
+
+                .pet-details {
+                    padding: 20px;
+                }
+            }
+            
+            .grid-image3 {
+                background-color: green;
+                grid-area: grid-image3;
+                background-image: url("https://e3.365dm.com/20/04/2048x1152/skynews-cats-coronavirus-covid-19_4964868.jpg");
+                background-position: center;
+                background-size: cover;
+                color: $primary-color;
+
+                &.grid-image3:hover {
+                    opacity: 0.8;
+               }
+
+                .pet-details {
+                    padding: 20px;
+                }
+            }
+        
+            .grid-image4 {
+                background-color: orange;
+                grid-area: grid-image4;
+                background-image: url("https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2019/12/Puppy-Carousel-main-590x538.jpg");
+                background-position: center;
+                background-size: cover;
+                color: $primary-color;
+
+                &.grid-image4:hover {
+                    opacity: 0.8;
+               }
+
+                .pet-details {
+                    padding: 20px;
+                }
+            }
+        
+            .grid-image5 {
+               background-color: purple;
+               grid-area: grid-image5;
+               background-image: url("https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png");
+               background-position: center;
+               background-size: cover;
+               color: $primary-color;
+               transition: 1s;
+
+               &.grid-image5:hover {
+                    opacity: 0.8;
+               }
+
+               .pet-details {
+                padding: 20px;
+                font-weight: bold;
+            }
+            }
+        }
+        @media only screen and (max-width: 760px) {
+            .grid-gallery-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 20em 20em 20em 20em 20em;
+                grid-template-areas: 
+                    "grid-image1"
+                    "grid-image2"
+                    "grid-image3"
+                    "grid-image4"
+                    "grid-image5"
+        
+            }
+        }
+    }
+    
+    
+
+
+
+
+    

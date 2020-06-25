@@ -1,0 +1,30 @@
+.footer-container {
+    height: 30vh;
+    background-color: palevioletred;
+    border: 1px solid white;
+
+    .contents {
+        display: flex;
+        justify-content: space-around;
+
+        .company-links {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            align-items: center;
+            
+        }
+
+        .resource-links {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            align-items: center;
+        }
+    }
+
+    .trademark-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
