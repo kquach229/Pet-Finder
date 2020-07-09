@@ -1,6 +1,5 @@
-import React, { useState , useEffect } from "react";
+import React from "react";
 import "./home-page.styles.scss";
-import axios from "axios";
 import Footer from "../../components/footer/footer.component";
 
 const HomePage = () => {
