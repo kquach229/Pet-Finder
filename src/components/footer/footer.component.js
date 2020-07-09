@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-container">
             <div className="contents">
             <div className="trademark-content">
-                <img src={require("../../assets/images/logo.png")} alt="image" style={{height:"100px", width:"100px"}}/>
+                <img src={require("../../assets/images/logo.png")} alt="" style={{height:"100px", width:"100px"}}/>
                 <span>&copy; 2020 PetFinder</span>
                 <span>All Rights Reserved</span>
             </div>
