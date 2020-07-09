@@ -2,6 +2,8 @@ import React from "react";
 import "./home-page.styles.scss";
 import Footer from "../../components/footer/footer.component";
 
+
+
 const HomePage = () => {
 
     return(
@@ -9,7 +11,7 @@ const HomePage = () => {
             <div className="banner-container">
                 <div className="banner-content">
                     <div className="banner-text">This can be your new pet</div>
-                    <input type="button" value="learn more"/>
+                    <span className="learnMoreButton">Learn More</span>
                 </div>
                
             </div>

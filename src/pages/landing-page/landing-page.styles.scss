@@ -8,4 +8,21 @@
     background-size: cover;
     background-position: center;
     color: white;
+
+    
+    .exploreButton {
+        color: palevioletred;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        transition: 1s;
+        &:hover {
+            color: white;
+            background-color: palevioletred;
+            cursor: pointer;
+        }
+
+    }
+
+   
 }

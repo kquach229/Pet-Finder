@@ -5,7 +5,7 @@ const LandingPage = (props) => {
     return(
         <div className="landing-container">
             <h1>PetFinder</h1>
-            <button onClick={()=>props.history.push("/home")}>Explore</button>
+            <span className="exploreButton" onClick={()=>props.history.push("/home")}>Explore</span>
         </div>
     )
 }
