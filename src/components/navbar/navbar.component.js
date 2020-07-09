@@ -6,7 +6,7 @@ const Header = () => {
     return(
         <div className="navbar-container">
             <div className="logo-container">
-                <img style={{height:"80px"}} src={require("../../assets/images/logo.png")}/>
+                <img style={{height:"80px"}} alt="" src={require("../../assets/images/logo.png")}/>
                 <span>PetFinder</span>
             </div>
             <ul className="navbar-links">
